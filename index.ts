@@ -39,6 +39,9 @@ app.get("/estudantes", async (request: FastifyRequest, reply: FastifyReply) => {
 })
 app.post("/estudantes", async (request: FastifyRequest, reply: FastifyReply) => {
     const {id,nome} = request.body as any
+
+    //Verifique a entrada
+    //ZOD
     try {
         const conn = await mysql.createConnection({
             host: "localhost",
