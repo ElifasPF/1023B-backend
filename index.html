@@ -13,7 +13,7 @@
 
     <script>
         async function buscaDados(){
-            const resposta = await fetch("http://localhost:8000/estudantes")
+            const resposta = await fetch("http://localhost:8001/estudantes")
             //console.log(resposta)
             if(resposta.status === 200){
                 const dados = await resposta.json()
@@ -23,9 +23,8 @@
                     const obj = dados[i];
                     //console.log(obj.nome)
                     const li = document.createElement("li")
-                    li.innerText = obj.nome
+                    li.innerText = `${obj.id} ${obj.nome}`
                     ul.appendChild(li)
-                    
                 }
                 // vai passar por cada elemento dos dados
                 // vai criar um li pra cada dado
