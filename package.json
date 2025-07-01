@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch ./index.ts",
+    "dev": "tsx watch index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p tsconfig.json",
     "start": "node dist/index.js"
   },
-  "author": "Elifas Peixoto Faustino",
+  "author": "Guilherme Figueiredo Terenciani",
   "license": "ISC",
   "description": "",
   "devDependencies": {
